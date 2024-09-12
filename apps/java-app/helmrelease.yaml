@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: java-app
+  namespace: default
+spec:
+  releaseName: java-app
+  chart:
+    spec:
+      chart: mychart
+      sourceRef:
+        kind: HelmRepository
+        name: myHelmRepo
+        namespace: flux-system
+      version: 0.1.0
+  values:
+    image:
+      repository: my-java-app
+      tag: latest

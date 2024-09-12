@@ -3,3 +3,7 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
+
+# Include the HelmRepository and HelmRelease files
+- ../../infrastructure/helmrepos/my-helm-repo.yaml
+- ../../apps/java-app/helmrelease.yaml
