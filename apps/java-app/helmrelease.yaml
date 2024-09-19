@@ -15,5 +15,5 @@ spec:
       version: 0.1.0
   values:
     image:
-      repository: my-java-app
+      repository: myapp
       tag: latest
