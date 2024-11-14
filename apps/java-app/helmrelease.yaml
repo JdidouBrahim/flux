@@ -16,5 +16,5 @@ spec:
   interval: 1m  # Add this line to specify how frequently Flux should reconcile the Helm release
   values:
     image:
-      repository: myapp
-      tag: latest
+      repository: hbn348/myapp
+      tag: "{{ .Values.image.tag }}"
