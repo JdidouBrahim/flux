@@ -13,13 +13,8 @@ spec:
         name: my-helm-repo
         namespace: flux-system
       version: 0.1.0
-  interval: 1m
+  interval: 1m  # Add this line to specify how frequently Flux should reconcile the Helm release
   values:
     image:
-      repository: hbn348/myapp
+      repository: myapp
       tag: latest
-  kubeConfig:
-    secretRef:
-      name: dockerhub-secret  # Referencing the Docker Hub pull secret
-  imagePullSecrets:
-  - name: dockerhub-secret
