@@ -10,7 +10,7 @@ spec:
       chart: mychart
       sourceRef:
         kind: HelmRepository
-        name: myHelmRepo
+        name: my-helm-repo
         namespace: flux-system
       version: 0.1.0
   values:

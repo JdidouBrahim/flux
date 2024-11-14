@@ -1,8 +1,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: myHelmRepo
+  name: my-helm-repo
   namespace: flux-system
 spec:
-  url: https://helm-18bc38.gitlab.io/
+  url: https://jdidoubrahim.github.io/helm
   interval: 10m
